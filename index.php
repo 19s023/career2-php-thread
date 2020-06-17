@@ -1,13 +1,15 @@
 <html>
-<head><title>掲示板</title></head>
+<head>
+    <title>掲示板</title>
+    <link rel="stylesheet" href="css.css">
+</head>
 <body>
-
 <h1>掲示板App</h1>
 
 <h2>投稿フォーム</h2>
 
 <form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
-    <input type="text" name="personal_name" placeholder="名前" required><br><br>
+    <input class="fo" type="text" name="personal_name" placeholder="名前" required><br><br>
     <textarea name="contents" rows="8" cols="40" placeholder="内容" required>
 </textarea><br><br>
     <input type="submit" name="btn" value="投稿する">
@@ -76,6 +78,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 readData();
 
 ?>
+
+<style>
+h1{
+    text-align:center;
+}
+
+</style>
 
 </body>
 </html>
