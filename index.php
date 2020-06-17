@@ -3,22 +3,27 @@
     <title>掲示板</title>
     <link rel="stylesheet" href="css.css">
 </head>
-<body>
-<h1>掲示板App</h1>
+<body style="background-color: black;">
+<h1 style="background-color: green;">
+   掲示板App
+    
+</h1>
 
-<h2>投稿フォーム</h2>
+<h2 style="text-align: center; background-color: aqua;">投稿フォーム</h2>
 
-<form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
-    <input class="fo" type="text" name="personal_name" placeholder="名前" required><br><br>
-    <textarea name="contents" rows="8" cols="40" placeholder="内容" required>
+<form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>" style="background-color: greenyellow;">
+    <input class="fo" type="text" name="personal_name" placeholder="名前" require style="width: 100%;"><br><br>
+    <textarea name="contents" rows="8" cols="40" placeholder="内容" required style="width: 100%;">
 </textarea><br><br>
-    <input type="submit" name="btn" value="投稿する">
+<div style="text-align: center;">
+    <input type="submit" name="btn" value="投稿する"style="background-color: red; text-align:center;"></input>
+</div>
 </form>
 
-<h2>スレッド</h2>
+<h2 style="background-color: orange; text-align: center;">スレッド</h2>
 
-<form method="post" action="delete.php">
-    <button type="submit">投稿を全削除する</button>
+<form method="post" action="delete.php" style="background-color: pink; text-align: center;">
+    <button type="submit" style="background-color: blue; color: white;">投稿を全削除する</button>
 </form>
 
 <?php
@@ -84,6 +89,19 @@ h1{
     text-align:center;
 }
 
+p{
+    background-color: gray;
+    color: gold;
+}
+
+input{
+    text-align: center;
+}
+
+textarea{
+    background-color: tomato;
+    color: white;
+}
 </style>
 
 </body>
